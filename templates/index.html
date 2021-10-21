@@ -1,5 +1,139 @@
 {% extends "base.html" %}
 {% block title %}Home Page{% endblock %}
+{% block heading %}Home Page{% endblock %}
 {% block content %}
-<h1>Test Website</h1>
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="{{url_for('static', filename='img2.jpg')}}" alt="Engineering" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Software</b></span> <span class="w3-hide-small w3-text-light-grey">Engineering</span></h1>
+  </div>
+</header>
+
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Technologies</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Python</div>
+        <img src="{{url_for('static', filename='python.jpg')}}" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Pygame</div>
+        <img src="{{url_for('static', filename='pygame.png')}}" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Tkinter</div>
+        <img src="{{url_for('static', filename='tkinter.jpg')}}" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Flutter</div>
+        <img src="{{url_for('static', filename='flutter.png')}}" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">AI ML</div>
+        <img src="{{url_for('static', filename='aiml.jpg')}}" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Flask</div>
+        <img src="{{url_for('static', filename='flask.png')}}" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Django</div>
+        <img src="{{url_for('static', filename='django.png')}}" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Git</div>
+        <img src="{{url_for('static', filename='git.png')}}" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    <p>The projects that are listed here are based on the Technologies that are enlisted above. These projects are just for learning purpose and are not completely bug free.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="Sorting Algorithm Visualization" style="width:100%">
+      <h3>Sorting Algorithm Visualization</h3>
+      <p class="w3-opacity">Sorting Algorithms</p>
+      <p>Bubble Sort, Insertion Sort, Selection Sort</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Space Ship Battle" style="width:100%">
+      <h3>Space Ship Battle</h3>
+      <p class="w3-opacity">Pygame</p>
+      <p>This is a space ship battle game built using pygame.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Searching Algorithm Visualization" style="width:100%">
+      <h3>Searching Algorithm Visualization</h3>
+      <p class="w3-opacity">Path Finding Algorithm</p>
+      <p>A* path finding algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Sudoku Solver" style="width:100%">
+      <h3>Sudoku Solver</h3>
+      <p class="w3-opacity">Pygame and Backtracking</p>
+      <p>This is a Sudoku game made using pygame. This project has an additional feature of solving the Sudoku board using backtracking algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Chatbot" style="width:100%">
+      <h3>Chatbot</h3>
+      <p class="w3-opacity">Tkinter and ANN</p>
+      <p>This is a Sudoku game made using pygame. This project has an additional feature of solving the Sudoku board using backtracking algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Fruits Classification" style="width:100%">
+      <h3>Fruits Classification</h3>
+      <p class="w3-opacity">Tkinter and SVM</p>
+      <p>This is a Sudoku game made using pygame. This project has an additional feature of solving the Sudoku board using backtracking algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Digit Recognition" style="width:100%">
+      <h3>Digit Recognition</h3>
+      <p class="w3-opacity">Tkinter and ANN</p>
+      <p>This is a Sudoku game made using pygame. This project has an additional feature of solving the Sudoku board using backtracking algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Mobile Application" style="width:100%">
+      <h3>Mobile Application</h3>
+      <p class="w3-opacity">Flutter</p>
+      <p>This is a Sudoku game made using pygame. This project has an additional feature of solving the Sudoku board using backtracking algorithm</p>
+      <p><button class="w3-button w3-light-grey w3-block">Details</button></p>
+    </div>
+  </div>
+
+  <footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by Techie Things</p>
+</footer>
 {% endblock %}

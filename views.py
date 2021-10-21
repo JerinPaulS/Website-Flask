@@ -25,6 +25,7 @@ def login():
 @views.route("/user", methods = ["POST", "GET"])
 def user():
     loginid = None
+    '''
     if "user" in session:
         user = session["user"]
 
@@ -37,7 +38,32 @@ def user():
 
         return render_template("user.html", loginid = loginid)
     else:
-        return redirect(url_for("login"))
+    '''
+    return render_template("user.html")
+
+@views.route("/blog")
+def blog():
+    return render_template("blog.html")
+
+@views.route("/games")
+def games():
+    return render_template("games.html")
+
+@views.route("/merchandize")
+def merchandize():
+    return render_template("merchandize.html")
+
+@views.route("/saved")
+def saved():
+    return render_template("saved.html")
+
+@views.route("/settings")
+def settings():
+    return render_template("settings.html")
+
+@views.route("/analytics")
+def analytics():
+    return render_template("analytics.html")
 
 @views.route("/logout")
 def logout():
